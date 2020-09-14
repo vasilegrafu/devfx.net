@@ -7,17 +7,34 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/DevFX.Tests/DevFX.Tests.csproj"
+                "${workspaceFolder}/DevFX.Tests/DevFX.Tests.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
             ],
             "problemMatcher": "$msCompile"
         },
         {
-            "label": "test",
+            "label": "publish",
             "command": "dotnet",
             "type": "process",
             "args": [
-                "test",
-                "${workspaceFolder}/DevFX.Tests/DevFX.Tests.csproj"
+                "publish",
+                "${workspaceFolder}/DevFX.Tests/DevFX.Tests.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "watch",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "watch",
+                "run",
+                "${workspaceFolder}/DevFX.Tests/DevFX.Tests.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
             ],
             "problemMatcher": "$msCompile"
         }
