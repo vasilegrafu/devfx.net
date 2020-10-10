@@ -4,7 +4,13 @@
 			"path": "."
 		}
 	],
+
 	"settings": {
-		"editor.minimap.enabled": false
+		"editor.minimap.enabled": false,
+
+		"files.exclude": {
+			"**/bin": true,
+		 	"**/obj": true
+		 }
 	}
 }
