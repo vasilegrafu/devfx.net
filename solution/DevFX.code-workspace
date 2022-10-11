@@ -11,6 +11,8 @@
 		"files.exclude": {
 			"**/bin": true,
 		 	"**/obj": true
-		 }
+		 },
+		 
+		 "omnisharp.dotnetPath": "d:\\Installations\\dotnet-sdk-6.0.402-win-x64\\"
 	}
 }
