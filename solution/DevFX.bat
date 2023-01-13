@@ -1,5 +1,5 @@
 @echo off
 
-SET PATH=i:\Installations\dotnet-sdk-6.0.402-win-x64;%PATH%
+SET PATH=%PATH_DOTNETSDK%;%PATH%
 
-i:\Installations\VSCode-win32-x64-1.72.1\Code.exe DevFX.code-workspace
+%PATH_VSCODE%\Code.exe DevFX.code-workspace
